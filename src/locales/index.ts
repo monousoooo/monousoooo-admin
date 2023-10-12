@@ -10,13 +10,13 @@ async function createI18nOptions(): Promise<I18nOptions> {
   const { locale } = storeToRefs(appStore)
   const defaultLocal = await import(`./lang/${locale.value}.ts`)
   return {
-    legacy: false,
-    locale: locale.value,
-    fallbackLocale: 'zh-CN',
+    legacy: false, // you must set `false`, to use Composition API
+    locale: locale.value, // set locale
+    fallbackLocale: 'zh-CN', // set fallback locale
     messages: {
+      // If you need to specify other options, you can set other options
       [locale.value]: defaultLocal.default,
-    },
-    sync: true,
+    }, // set locale messages
     silentTranslationWarn: true,
     missingWarn: false,
     silentFallbackWarn: true,
