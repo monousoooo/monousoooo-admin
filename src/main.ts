@@ -1,5 +1,6 @@
 import { createApp } from 'vue'
 import 'ant-design-vue/dist/reset.css'
+import 'uno.css'
 import App from './App.vue'
 import { setupI18n } from './locales'
 
