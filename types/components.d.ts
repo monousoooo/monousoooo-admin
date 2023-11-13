@@ -9,6 +9,7 @@ declare module 'vue' {
   export interface GlobalComponents {
     AConfigProvider: typeof import('ant-design-vue/es')['ConfigProvider']
     AQrcode: typeof import('ant-design-vue/es')['QRCode']
+    EditorJs: typeof import('./../src/components/EditorJs/index.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
   }
