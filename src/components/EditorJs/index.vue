@@ -9,7 +9,7 @@ onMounted(() => {
     placeholder: '请输入内容',
     tools: {
       header: {
-        class: Header,
+        class: Header as any,
         inlineToolbar: ['link'],
       },
     },
